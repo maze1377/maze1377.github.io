@@ -6,8 +6,8 @@
 */
 
 /*
-MAIN COLOR: #087f5b
-GREY COLOR: #343a40
+  MAIN COLOR: #0ca678
+  GREY COLOR: #343a40
 */
 
 * {
@@ -19,5 +19,115 @@ GREY COLOR: #343a40
 body {
   font-family: "Inter", sans-serif;
   color: #343a40;
-  line-height: 1;
+  background-image: linear-gradient(
+    to left bottom,
+    #b2f2bb,
+    #8eedcb,
+    #6ce6dc,
+    #54ddec,
+    #53d2f8,
+    #67c9ff,
+    #87bdff,
+    #a8b0fb,
+    #cea1eb,
+    #ec93d0,
+    #fd89ad,
+    #ff8787
+  );
+}
+
+.center-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.wrapper .avatar {
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper .avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 500rem;
+}
+
+.wrapper .card {
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  top: -75px;
+  padding-top: 75px;
+  margin: 0 auto;
+  background: #fefedf;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.wrapper .card .bio {
+  padding: 1em;
+}
+
+.wrapper .card .bio .head {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.wrapper .card .bio .info {
+  padding-top: 0.5rem;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .card .bio .description {
+  text-align: justify;
+}
+
+.wrapper .card .bio .description p {
+  padding: 0.8em 0.5em 0;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.wrapper .card .actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wrapper .card .actions .button {
+  background-color: #12b886;
+  border: none;
+  border-radius: 16px;
+  color: #f8f9fa;
+  padding: 0.5em 1em;
+  margin: 1em 0.5em;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.wrapper .card .actions .button:hover {
+  background-color: #087f5b;
 }
