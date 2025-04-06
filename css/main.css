@@ -79,6 +79,7 @@ body {
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.2);
   border-radius: 24px;
   text-align: center;
+  overflow: hidden;
 }
 
 .wrapper .card .bio {
@@ -98,7 +99,7 @@ body {
 }
 
 .wrapper .card .bio .description {
-  text-align: justify;
+  text-align: center;
   max-width: 540px;
   margin: 0 auto;
 }
@@ -108,6 +109,12 @@ body {
   font-weight: 400;
   line-height: 1.6;
   margin: 0;
+}
+
+.wrapper .card .bio .description p strong {
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0 1px;
 }
 
 .wrapper .card .actions {
@@ -152,4 +159,31 @@ footer {
   bottom: 0;
   width: 100%;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 1em 1em;
+  }
+  
+  .wrapper .card {
+    padding-top: 60px;
+    top: -60px;
+  }
+  
+  .wrapper .card .bio .description {
+    padding: 0 4px;
+  }
+  
+  .wrapper .card .bio .description p {
+    font-size: 14px;
+    word-spacing: 1px;
+    hyphens: auto;
+  }
+  
+  footer p {
+    font-size: 10px;
+    padding: 0 8px;
+  }
 }
