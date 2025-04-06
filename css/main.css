@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: #343a40;
@@ -83,25 +87,27 @@ body {
 
 .wrapper .card .bio .head {
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.5em;
+  margin-bottom: 4px;
 }
 
 .wrapper .card .bio .info {
-  padding-top: 0.5rem;
-  font-size: 1em;
-  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 12px;
 }
 
 .wrapper .card .bio .description {
   text-align: justify;
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .wrapper .card .bio .description p {
-  padding: 0.8em 0.5em 0;
+  padding: 0.5em 0.5em 0;
   font-weight: 400;
   line-height: 1.6;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
+  margin: 0;
 }
 
 .wrapper .card .actions {
@@ -109,6 +115,7 @@ body {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 8px 0 16px;
 }
 
 .wrapper .card .actions .button {
@@ -116,18 +123,33 @@ body {
   border: none;
   border-radius: 16px;
   color: #f8f9fa;
-  padding: 0.5em 1em;
-  margin: 1em 0.5em;
+  padding: 0.6em 1.2em;
+  margin: 0.7em 0.5em;
   font-size: 1rem;
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  transition-duration: 0.3s;
+  transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper .card .actions .button:hover {
   background-color: #087f5b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #f8f9fa;
+  background: transparent;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
