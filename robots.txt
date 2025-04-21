@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /img/raw/
 
 Sitemap: https://mahdiakbarizarkesh.ir/sitemap.xml

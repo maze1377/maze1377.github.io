@@ -13,7 +13,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - CSS: Follow the font size system (10/12/14/16/18/20/24/30/36/44/52/62/74/86/98px)
 - CSS: Main color #12b886, Grey color #343a40
 - File Structure: Keep assets in appropriate directories (css/, js/, img/, assert/)
-- Meta Tags: Maintain comprehensive meta tags for SEO
 - Responsive Design: Ensure site remains responsive on all devices
 - Keep external dependencies minimal (only using Google Fonts and Analytics)
 - Maintain clean and semantic HTML structure
+
+## SEO Guidelines
+- Use proper semantic HTML5 elements (header, main, footer, section, etc.)
+- Add JSON-LD structured data for rich snippets
+- Include canonical URL tags
+- Use OpenGraph and Twitter Card meta tags with "property" not "name" attribute
+- Provide descriptive alt text for images
+- Optimize image loading with width, height, and loading="lazy" attributes
+- Use proper heading hierarchy (h1-h6)
+- Update sitemap.xml when adding new content
+- Ensure mobile responsiveness with proper viewport settings
+- Use preconnect for external resources
+- Defer non-critical JavaScript
+- Update robots.txt with proper directives
